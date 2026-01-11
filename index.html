@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мастерская Игрушек - Самозанятый мастер</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Мастерская Игрушек</div>
+            <ul>
+                <li><a href="#about">О мастере</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Создание уникальных handmade игрушек</h1>
+            <p>С душой и на заказ для вас и ваших близких</p>
+            <a href="#contact" class="cta-button">Заказать</a>
+        </div>
+    </header>
+
+    <section id="about" class="fade-in">
+        <h2>О мастере</h2>
+        <p>Привет! Я самозанятый мастер с 5-летним опытом. Использую только натуральные материалы: дерево, ткань, шерсть. Каждая игрушка — это уникальное произведение, сделанное под ваши пожелания. Подходит для детей, коллекционеров и подарков.</p>
+    </section>
+
+    <section id="gallery" class="fade-in">
+        <h2>Галерея работ</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/toy1.jpeg" alt="Игрушка 1" onclick="openLightbox(this)">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/toy2.jpg" alt="Игрушка 2" onclick="openLightbox(this)">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/toy3.jpg" alt="Игрушка 3" onclick="openLightbox(this)">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <!-- Добавь больше изображений по аналогии -->
+        </div>
+    </section>
+
+    <section id="services" class="fade-in">
+        <h2>Услуги</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <i class="fas fa-teddy-bear"></i>
+                <h3>Мягкие игрушки</h3>
+                <p>Мишки, зайцы и фантастические существа из ткани и шерсти.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-puzzle-piece"></i>
+                <h3>Деревянные конструкторы</h3>
+                <p>Пазлы и игрушки для развития из натурального дерева.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-gift"></i>
+                <h3>Персонализация</h3>
+                <p>Игрушки с именами, датами или особыми деталями.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-tools"></i>
+                <h3>Ремонт</h3>
+                <p>Восстановление любимых старых игрушек.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h2>Контакты</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Ваш email" required>
+            <textarea placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> <a href="mailto:raykhan.murzakhmetova@bk.ru">murzakhmetova03@internet.ru</a></p>
+            <p><i class="fas fa-phone"></i> +7 (992) 036-96-18</p>
+        </div>
+    </section>
+
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Мастерская Игрушек. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
